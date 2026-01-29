@@ -41,7 +41,7 @@ namespace WebApplication3.Service
             {
                 _db.productClasses.Add(Produto);
                 await _db.SaveChangesAsync();
-                return await GetAll();
+                return await GetAll(); 
             }
             catch (Exception ex)
             {
