@@ -26,9 +26,9 @@ namespace WebApplication3.Service
                 }
                 return null;            
         }
-        public async Task<ProductClass> GetByIdService(int Id)
+        public async Task<ProductClass> GetByIdService(int id)
         { 
-            var product = await _db.productClasses.FirstOrDefaultAsync(p => p.Id == Id);
+            var product = await _db.productClasses.FirstOrDefaultAsync(p => p.Id == ));
             if(product != null)
             {
                 return product;
