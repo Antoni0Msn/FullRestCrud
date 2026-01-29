@@ -43,9 +43,9 @@ namespace WebApplication3.Service
                 await _db.SaveChangesAsync();
                 return await GetAll();
             }
-            catch (Exception erroCreate)
+            catch (Exception ex)
             {
-                errorException = erroCreate;
+                errorException = ex;
                 return null;
             }
         }
