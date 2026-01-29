@@ -1,0 +1,34 @@
+﻿@WebApplication3_HostAddress = https://localhost:7083
+
+GET {{WebApplication3_HostAddress}}/api/productapi
+
+###
+
+@Id=2
+GET {{WebApplication3_HostAddress}}/api/productapi/{{Id}}
+
+###
+
+POST {{WebApplication3_HostAddress}}/api/productapi
+Content-Type: application/json
+
+{
+  "Name": "Segundo Carro",
+  "Description":"Carro com três rodas.s"
+}
+
+###
+
+PUT {{WebApplication3_HostAddress}}/api/productapi/{{Id}}
+Content-Type: application/json
+
+{
+  "Name": "Segundo Carro",
+  "Description":"Carro com três rodas."
+}
+
+###
+
+DELETE {{WebApplication3_HostAddress}}/api/ProductAPI/{{id}}
+
+###
